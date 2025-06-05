@@ -116,31 +116,33 @@ document.getElementById('N-val').textContent = N;
 
   if (O > 30 && C > 30) {
     role = "Trailblazing Visionary";
-    desc = "You invent your own delivery routes. If there’s no path, you build one. Probably out of twigs.";
+    desc = "You invent your own delivery routes. If there’s no path, you build one. Probably out of twigs. You don’t follow paths — you invent them, then convince everyone they were always there. Imagination and precision swirl inside you like a storm trapped in a flask. You’re the kind of courier the company parades around, but quietly fears. Your ideas get results, but they also get people hurt. You dream in diagrams and nightmares, and both involve cliffs.";
   } else if (O < 20 && C > 30 && N < 20) {
     role = "Risk-Free Rope Guy";
-    desc = "You’re methodical, grounded, and allergic to taking chances. Snow loves you.";
+    desc = "You’re methodical, grounded, and allergic to taking chances. Snow loves you. Every step you take has already been calculated, simulated, and pre-mourned. You find chaos offensive and mistakes personally insulting. People find you tedious - until they need you. You don't gamble. You prepare for every possible failure except being left behind.";
   } else if (E > 30 && C < 20 && A < 20) {
     role = "Bridge Gambler";
-    desc = "No rope? No problem. You’re reckless, fearless, and 60% successful.";
+    desc = "No planks? No problem. You’re reckless, fearless, and 60% successful. You move fast, talk fast, and cross before anyone says “wait.” You trust your instincts more than the planks you place and treat every crossing like a bet you plan to win. Caution irritates you. Orders are suggestions. You’re not the safest courier, or the kindest - but you’re damn sure the first one there.";
   } else if (A < 15 && N > 25) {
     role = "Cold-Hearted Courier";
-    desc = "Feelings are for summer interns. You deliver cold packages with colder stares.";
+    desc = "Feelings are for summer interns. You deliver cold packages with colder stares. You complete missions with flawless efficiency, and absolutely no warmth. Compassion, to you, is an operational delay. People say you’re cruel - you say you’re honest. You’ve never hesitated, never comforted, and never failed. You don’t lose teammates. You leave them.";
   } else if (O > 30 && N > 30) {
     role = "Frostbitten Poet";
-    desc = "You whisper haikus to the snow. You dream more than you deliver, but damn you're poetic.";
+    desc = "You whisper haikus to the snow. You dream more than you deliver, but damn you're poetic. You feel everything - the silence, the snow, the long, cruel stare of the ridge. While others march, you wander. You’ve delivered more metaphors than mail. People call you fragile. But you’re not weak - just overwhelmed by the weight of beauty and grief.";
   } else if (E > 30 && A > 25) {
     role = "Social Sherpa";
-    desc = "You bring warmth, jokes, and snacks to the base camps. Oh, and packages too.";
+    desc = "You bring warmth, jokes, and snacks to the base camps. Oh, and packages too. You carry packs and people equally. Your silence unnerves you, so you fill it with encouragement and shoulder pats. You’d carry someone’s grief if it meant keeping the group intact. You’re liked, but secretly tired. The mountain wears down your body slower than the silence after someone asks if you’re okay.";
   } else if (E < 20 && C > 25) {
     role = "Ghost of the Glacier";
-    desc = "Silent, efficient, untraceable. You are the reason we trust unknown footsteps in the snow.";
+    desc = "Silent, efficient, untraceable. You are the reason we trust unknown footsteps in the snow. You don't talk - not because you're shy, but because no one needs to hear what you see. Where others panic, you pause. People rarely remember you're there, but your name always ends up on the report. You are not unnoticed - you are unspoken. Maybe you like it that way?";
   } else if (N < 15 && C > 25 && A >= 20 && A <= 30) {
     role = "Hyperstable Mule";
-    desc = "A calm beast of burden. Unshakable, dependable, respected.";
+    desc = "A calm beast of burden. Unshakable, dependable, respected. Nothing rattles you. Not the howling wind, not the frostbite, not the fact that your last partner vanished mid-shift. You are a moving mountain, and your calm feels unnatural. People look to you for stability, but never ask what you're hiding beneath it. You don’t react - and that’s starting to scare them.";
   } else if (N > 30 && O >= 20 && O <= 30) {
     role = "Worried Pathfinder";
-    desc = "You triple-check your compass, cry a little, and still somehow make it to the summit.";
+    desc = "You triple-check your compass, cry a little, and still somehow make it to the summit. You never forget a name, a route, or a near-death experience. You think of five ways to die before your first sip of coffee. Planning is your therapy, though it never quiets the dread. Others trust you because you’ve thought of everything - even the horrible things they try not to. You’re exhausted, but still climbing.";
+
+";
   } else {
     // Fallback to highest trait
     const traits = { O, C, E, A, N };
@@ -149,23 +151,23 @@ document.getElementById('N-val').textContent = N;
     switch (highest) {
       case 'O':
         role = "Freestyle Mapper";
-        desc = "You throw the company map away and find your own way down. Sometimes it works!";
+        desc = "You throw the company map away and find your own way down. Sometimes it works! You can’t follow rules because they make no sense in a world this broken. Your mind is beautiful and unreliable. You imagine six ways through the mountain, and all of them are wrong - but at least they’re yours. Structure irritates you. You don’t always arrive where you're meant to, but the view is breathtaking.";
         break;
       case 'C':
         role = "Checklist Champion";
-        desc = "You never miss a delivery or a checkbox. We love that about you.";
+        desc = "You never miss a delivery or a checkbox. We love that about you. Your clipboard is a weapon. You finish tasks before others start theirs. You aren’t adventurous - you’re precise. You hate chaos but secretly love being the one who fixes it. Control is your coping mechanism.";
         break;
       case 'E':
         role = "Echo in the Valley";
-        desc = "You talk more than you walk. Still, people like hearing you approach.";
+        desc = "You talk more than you walk. Still, people like hearing you approach. You fill the silence because you’re terrified of hearing yourself think. Every base camp knows your name, every outpost hears your laugh - but no one sees you after lights out. You use charisma as insulation, volume as armor. You are rarely alone, but often lonely. You make the climb feel easier for others, but heavier for yourself.";
         break;
       case 'A':
         role = "People’s Porter";
-        desc = "Your cargo? The weight of kindness. And also, actual cargo.";
+        desc = "Your cargo? The weight of kindness. And also, actual cargo. You carry burdens that aren’t yours - packs, feelings, mistakes. You absorb the fear of others so they can keep climbing. When someone cries, you don’t flinch - you tighten their straps and say it’s okay. You forgive what shouldn’t be forgiven, trust when it’s dangerous, and hope when it hurts. The company loves you - not because you're useful, but because you never say no.";
         break;
       case 'N':
         role = "Bundle of Nerves";
-        desc = "You live in fear. But you *deliver* in fear. Which counts.";
+        desc = "You live in fear. But you *deliver* in fear. Which counts. You imagine every bad outcome in high definition. You get the job done, but it costs you three ulcers and a twitch in your left eye. You doubt yourself constantly - which makes you more accurate than most. You’re rarely calm, but often right. Painfully aware, dangerously prepared.";
         break;
     }
   }
