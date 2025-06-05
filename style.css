@@ -30,9 +30,9 @@ h1 {
 }
 
 .intro {
-  font-size: 0,3em;
+  font-size: 0,2em;
   margin: 30px 0;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .start-button {
@@ -126,4 +126,15 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background-color: #bf5c0f;
   border-radius: 10px;
+}
+
+a {
+  color: #000000; /* Your chosen color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #000000; /* Darker on hover */
+  text-decoration: underline;
 }
