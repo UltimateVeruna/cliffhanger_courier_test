@@ -32,7 +32,8 @@ h1 {
 .intro {
   font-size: 0,2em;
   margin: 30px 0;
-  line-height: 1.2;
+  line-height: 1;
+  letter-spacing: 0.2rem;
 }
 
 .start-button {
